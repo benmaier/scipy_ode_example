@@ -46,7 +46,7 @@ r.set_f_params(coefficient_matrix)
 
 # max value of time and points in time to integrate to
 t_max = 10
-N_spacing_in_t = 1000
+N_spacing_in_t = 100
 
 # create vector of time points you want to evaluate
 t = np.linspace(t_0,t_max,N_spacing_in_t)
@@ -65,5 +65,7 @@ for it, t_ in enumerate(t):
 
 # plot result
 pl.plot(t,x_result)
+pl.xlabel('time $t$')
+pl.ylabel('position $x$')
 pl.show()
 
