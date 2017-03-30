@@ -9,7 +9,7 @@ def dxdt(t,y,coefficient_matrix):
         
         in momentum space:
         dx/dt = v
-        dp/dt = (-k/m) x
+        dv/dt = (-k/m) x
 
         as vector equation
          d   / x \     / 0  -k/m \   / x \    dy
