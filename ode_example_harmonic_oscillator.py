@@ -6,7 +6,7 @@ import pylab as pl
 def dxdt(t,y,coefficient_matrix):
     r"""Harmonic oscillator:
         m d^2x/dt^2 = -k x
-        
+
         in momentum space:
         dx/dt = v
         dv/dt = (-k/m) x
@@ -76,7 +76,7 @@ pl.ylabel('position $x$')
 def dxdt(t,y,k,m):
     r"""Harmonic oscillator:
         m d^2x/dt^2 = -k x
-        
+
         in momentum space:
         dx/dt = v
         dv/dt = (-k/m) x
@@ -105,7 +105,7 @@ v_0 = 1 # initial momentum
 t_0 = 0 # intitial time
 
 # initial y-vector from initial position and momentum
-y0 = np.array([x_0,v_0]) 
+y0 = np.array([x_0,v_0])
 
 # initialize integrator
 r = ode(dxdt)
